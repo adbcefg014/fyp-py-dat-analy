@@ -29,10 +29,12 @@ def on_snapshot_continuous(doc_snapshot, changes, read_time):
         continuous_read = doc_dict["continuousRead"]
         print(f'Sensors reading continuously: {continuous_read}')
     
-    if (not first_init) and continuous_read:
-        node_watch.unsubscribe()
-    if (not first_init) and (not continuous_read):
-        node_watch.subscribe()
+    # if (not first_init) and continuous_read:
+    #     node_watch.unsubscribe()
+    #     print("unsub")
+    # if (not first_init) and (not continuous_read):
+    #     node_watch.subscribe()
+    #     print("sub")
     
     first_init = False
     callback_done.set()
