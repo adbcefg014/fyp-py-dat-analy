@@ -54,6 +54,7 @@ node_ref = db.collection(node_name).order_by("t").limit(50)
 
 #Define the data analysis function
 def data_analysis():
+    # TODO
     pass
 
 # Watch the documents/collections
