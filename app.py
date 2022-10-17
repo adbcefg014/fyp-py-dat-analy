@@ -4,6 +4,10 @@ from firebase_admin import credentials
 from firebase_admin import firestore
 import pandas as pd
 import numpy as np
+import matplotlib.pyplot as plt
+plt.style.use('default')
+%matplotlib inline
+
 # Set which node to listen to & analyze
 node_name = "Argon_4"
 
